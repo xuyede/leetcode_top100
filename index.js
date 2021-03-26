@@ -1,46 +1,25 @@
 // https://leetcode-cn.com/problemset/leetcode-hot-100/
 
-// 无重复字符的最长子串
+// 寻找两个正序数组的中位数
 /**
-  给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度
+  给定两个大小分别为 m 和 n 的正序（从小到大）数组 nums1 和 nums2。
+  请你找出并返回这两个正序数组的 中位数 。
 
-  输入: s = "abcabcbb"
-  输出: 3 
-  解释: 因为无重复字符的最长子串是 "abc"，所以其长度为 3
+  输入：nums1 = [1,3], nums2 = [2]
+  输出：2.00000
+  解释：合并数组 = [1,2,3] ，中位数 2
   
-  输入: s = "bbbbb"
-  输出: 1
-
-  输入: s = "pwwkew"
-  输出: 3
+  输入：nums1 = [1,2], nums2 = [3,4]
+  输出：2.50000
+  解释：合并数组 = [1,2,3,4] ，中位数 (2 + 3) / 2 = 2.5
 */
 
-const lengthOfLongestSubstring = function(s) {
-  if (!s) return 0
-  if (s == ' ') return 1;
-  
-  let ret = 1;
-  let startPoint = 0;
-  let set = new Set();
-
-  for (; startPoint < s.length; startPoint++) {
-    let i = startPoint;
-    while (i < s.length) {
-      let t = s[i];
-      if (!set.has(t)) {
-        set.add(t);
-        i++;
-      } else {
-        ret = Math.max(ret, set.size);
-        set.clear();
-        break;
-      }
-    }
-  }
-
-  return ret;
+const findMedianSortedArrays = function(num1, num2) {
+  let ret = [];
+  let p1 = 0; 
+  let p2 = 0;
 }
 
 console.log(
-  lengthOfLongestSubstring('c')
+  findMedianSortedArrays([1, 3], [2])
 )

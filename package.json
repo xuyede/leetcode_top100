@@ -1,0 +1,14 @@
+{
+  "name": "leetcode_top100",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/xuyede/leetcode_top100.git",
+  "author": "xuyede <yede.xu@jyblife.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "scripts": {
+    "dev": "nodemon ./index.js"
+  }
+}

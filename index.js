@@ -1,46 +1,23 @@
 // https://leetcode-cn.com/problemset/leetcode-hot-100/
 
-// 无重复字符的最长子串
+// 最长回文子串
 /**
-  给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度
+  给你一个字符串 s，找到 s 中最长的回文子串。
 
-  输入: s = "abcabcbb"
-  输出: 3 
-  解释: 因为无重复字符的最长子串是 "abc"，所以其长度为 3
+  输入：s = "babad"
+  输出："bab"
+  解释："aba" 同样是符合题意的答案。
   
-  输入: s = "bbbbb"
-  输出: 1
+  输入：s = "cbbd"
+  输出："bb"
 
-  输入: s = "pwwkew"
-  输出: 3
+  输入：s = "a"
+  输出："a"
+
+  输入：s = "ac"
+  输出："a"
 */
 
-const lengthOfLongestSubstring = function(s) {
-  if (!s) return 0
-  if (s == ' ') return 1;
-  
-  let ret = 1;
-  let startPoint = 0;
-  let set = new Set();
+const longestPalindrome = function (s) {};
 
-  for (; startPoint < s.length; startPoint++) {
-    let i = startPoint;
-    while (i < s.length) {
-      let t = s[i];
-      if (!set.has(t)) {
-        set.add(t);
-        i++;
-      } else {
-        ret = Math.max(ret, set.size);
-        set.clear();
-        break;
-      }
-    }
-  }
-
-  return ret;
-}
-
-console.log(
-  lengthOfLongestSubstring('c')
-)
+console.log(longestPalindrome("babad"));

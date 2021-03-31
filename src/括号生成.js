@@ -1,4 +1,3 @@
-// https://leetcode-cn.com/problemset/leetcode-hot-100/
 // https://leetcode-cn.com/problems/generate-parentheses/solution/pei-yang-chou-xiang-si-wei-hui-su-jie-fa-7dwu/
 
 // 括号生成
@@ -34,5 +33,5 @@ const generateParenthesis = function(n) {
 }
 
 console.log(
-  generateParenthesis(4)
+  generateParenthesis(1)
 )

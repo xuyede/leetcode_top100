@@ -17,6 +17,7 @@ const generateParenthesis = function(n) {
   const res = [];
   dfs(n, '', 0, 0, res);
 
+  // open: 左括号的数量 close：右括号的数量
   function dfs(n, path, open, close, res) {
     if (open > n || close > n || close > open) {
       return;

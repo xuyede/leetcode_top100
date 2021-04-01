@@ -1,19 +1,23 @@
 // https://leetcode-cn.com/problemset/leetcode-hot-100/
 
-// 删除链表的倒数第 N 个结点
+// 最长有效括号
 /**
-  给你一个链表，删除链表的倒数第 n 个结点，并且返回链表的头结点。
+  给你一个只包含 '(' 和 ')' 的字符串，找出最长有效（格式正确且连续）括号子串的长度
 
-  输入：head = [1,2,3,4,5], n = 2
-  输出：[1,2,3,5]
+  输入：s = "(()"
+  输出：2
+  解释：最长有效括号子串是 "()"
+  示例 2：
 
-  输入：head = [1], n = 1
-  输出：[]
+  输入：s = ")()())"
+  输出：4
+  解释：最长有效括号子串是 "()()"
+  示例 3：
 
-  输入：head = [1,2], n = 1
-  输出：[1]
+  输入：s = ""
+  输出：0
 */
 
-const removeNthFromEnd = function (head, n) {};
+const longestValidParentheses = function (s) {};
 
-console.log(removeNthFromEnd("234"));
+console.log(longestValidParentheses("(())()"));

@@ -24,10 +24,6 @@ const permute = function(nums) {
   return ret;
 
   function dfs(nums, level, path, pathItem, ret) {
-    // if (!(path.indexOf(`${pathItem}`) > -1 && level > 1)) {
-    //   path += `${pathItem}`;
-    // }
-
     if (pathItem !== '' && !path.includes(pathItem)) {
       path.push(pathItem);
     }

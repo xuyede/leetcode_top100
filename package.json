@@ -10,5 +10,8 @@
   },
   "scripts": {
     "dev": "nodemon ./index.js"
+  },
+  "dependencies": {
+    "simple-git": "^2.39.0"
   }
 }

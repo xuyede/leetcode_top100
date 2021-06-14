@@ -15,3 +15,18 @@
       [3,2,1]
     ]
 */
+
+const simpleGit = require("simple-git");
+const co = require("co");
+
+const git = simpleGit();
+
+co(async function () {
+  const { current: branch } = await git.branch();
+  const originBranchName = "origin/master";
+  const diffBranchs = `${branch}...${originBranchName}`;
+  const diffSummary = await git.diff([diffBranchs]);
+
+  console.log(diffSummary);
+  // console.log(branchLocal);
+});

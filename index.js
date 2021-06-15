@@ -27,24 +27,3 @@ co(async function() {
 
   console.log(diffSummary);
 })
-
-
-// console.log(git.branch());
-
-// const canJump = function(nums) {
-//   let k = 0;
-//   for (let i = 0; i <= k; i++) {
-//     let currJumpCount = nums[i] + i;
-//     k = Math.max(k, currJumpCount);
-
-//     if (k >= nums.length - 1) {
-//       return true;
-//     }
-//   }
-
-//   return false;
-// }
-
-// console.log(
-//   canJump([2,3,1,1,4])
-// )

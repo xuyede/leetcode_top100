@@ -15,11 +15,6 @@
   解释：无论怎样，总会到达下标为 3 的位置。但该下标的最大跳跃长度是 0 ， 所以永远不可能到达最后一个下标。
 */
 
-const simpleGitFun = require('simple-git');
-const git = simpleGitFun();
-
-console.log(git.branch());
-
 const canJump = function(nums) {
   let k = 0;
   for (let i = 0; i <= k; i++) {

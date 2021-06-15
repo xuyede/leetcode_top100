@@ -20,7 +20,7 @@ const co = require('co');
 const git = simpleGitFun();
 
 co(async function() {
-  const diffBranchs = `test_branch...master`;
+  const diffBranchs = `test_branch...origin/master`;
   const diffSummary = await git.diff([diffBranchs]).all;
   console.log(diffSummary)
 })
